@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Login Area */
+.login-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Login Card */
+.login-card {
+    width: 420px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 24px;
+    backdrop-filter: blur(18px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+/* Heading */
+.login-card h1 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #dbeafe;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Input */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 13px 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.92);
+    font-size: 15px;
+}
+
+.input-group input:focus {
+    box-shadow: 0 0 0 3px rgba(147, 197, 253, 0.5);
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: #1e3a8a;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Message */
+#message {
+    margin-top: 18px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Footer */
+.login-footer {
+    margin-top: 25px;
+    color: #bfdbfe;
+    font-size: 12px;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+
+    .login-card {
+        width: 100%;
+        padding: 30px 25px;
+    }
+
+    .login-card h1 {
+        font-size: 24px;
+    }
+}
